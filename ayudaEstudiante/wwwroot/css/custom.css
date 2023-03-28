@@ -1,0 +1,82 @@
+﻿
+
+.chat-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+    .chat-message .avatar {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ccc;
+        background-image: url('https://placehold.it/50x50');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .chat-message .bubble {
+        flex: 1;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+    }
+
+        .chat-message .bubble p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+    .chat-message.sent .bubble {
+        background-color: #dcf8c6;
+    }
+
+    .chat-message.received .bubble {
+        background-color: #fff;
+    }
+
+.message-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+    .message-form input {
+        flex: 1;
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    
+
+        .message-form button:hover {
+            background-color: #0069d9;
+        }
+
+
+.jefe {
+    height: 50%;
+    width: 70%;
+}
+
+#global {
+    height: 500px;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+    overflow-y: scroll;
+    
+}

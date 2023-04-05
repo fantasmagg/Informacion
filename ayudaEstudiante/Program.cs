@@ -1,4 +1,5 @@
 using ayudaEstudiante.servicios;
+using portafolio.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IRepocistorioMensajes, RepocistorioMensajes>();
 builder.Services.AddTransient<IBancoDePreguntasYrespuestas, BancoDePreguntasYrespuestas>();
+
+//email
+builder.Services.AddTransient<IServicioEmail, ServiciosEmailSendGrid>();
 
 var app = builder.Build();
 

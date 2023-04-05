@@ -7,6 +7,7 @@ namespace ayudaEstudiante.servicios
 {
     public interface IRepocistorioMensajes
     {
+        Task DeleteMensajes();
         Task guardarMensajes(SenderMensaje senderMensaje);
         Task<IEnumerable<SenderMensaje>> obtenerMensajes();
     }
@@ -35,6 +36,13 @@ namespace ayudaEstudiante.servicios
             using var connection = new SqlConnection(ConnectionStrings);
 
             return await connection.QueryAsync<SenderMensaje>("SELECT MessageText , MessageTextSend from mensajes;");
+        }
+
+        public async Task DeleteMensajes()
+        {
+            using var connection = new SqlConnection(ConnectionStrings);
+
+            await connection.ExecuteAsync("DELETE FROM mensajes;");
         }
 
 

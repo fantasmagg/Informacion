@@ -1,0 +1,126 @@
+using ayudaEstudiante.Models;
+using System.Reflection.Metadata;
+
+namespace ayudaEstudiante.servicios
+{
+    public interface IBancoDePreguntasYrespuestas
+    {
+        string preguntas(SenderMensaje senderMensaje);
+    }
+    public class BancoDePreguntasYrespuestas: IBancoDePreguntasYrespuestas
+    {
+        public string preguntas (SenderMensaje senderMensaje)
+        {
+           
+
+            
+            
+            if (senderMensaje.MessageTextSend.Equals("hola", StringComparison.InvariantCultureIgnoreCase) )
+            {
+                return @"Hola Soy un bot un tanto limitado pero espero poder adudarte que deseas saber:
+                        <br>1-Ver pensum
+                        <br>2-Duracion de Carreras
+                        <br>3-Redes Sociales
+                        <br>4-Donde esta el departamento de registro
+                        <br>5-cuantas sucursales tiene el ITLA
+                        <br>6-Donde imprimo los tickets
+                        ";
+            }
+
+
+			if (senderMensaje.MessageTextSend.Equals("1", StringComparison.InvariantCultureIgnoreCase) ||
+                senderMensaje.MessageTextSend.Equals("ver pensum", StringComparison.InvariantCultureIgnoreCase) ||
+                senderMensaje.MessageTextSend.Equals("Ver Pensum", StringComparison.InvariantCultureIgnoreCase)
+                )
+			{
+				return @"Ver Pensum: <br>
+                           <br>💻 <a href='https://itla.edu.do/images/pdf/pensums-2020/pensum-2020-sotfware.pdf' target='_blank'>Software</a>
+                           <br> 🤖<a href='https://itla.edu.do/images/pdf/pensums-2020/pensum-2020-mecatronica.pdf' target='_blank'>Mecatronica</a>
+                            <br> 🔐<a href='https://itla.edu.do/images/pdf/pensum-seguridad-informatica-2020.pdf' target='_blank'>Seguridad informatica</a>
+                             <br> 👾<a href='https://itla.edu.do/images/carreras/2020/pensum-videojuegos.pdf' target='_blank'>simulaciones interactivas y videojuegos</a>
+                            <br> 📶<a href='https://itla.edu.do/images/carreras/2020/pensum-telecomunicaciones-2021.pdf' target='_blank'>telecomunicaciones</a>
+                            <br> 🤖<a href='https://itla.edu.do/images/carreras/2020/pensum-inteligencia-artificial.pdf' target='_blank'>inteligencia artificial</a>
+                            <br> 🕵🏽<a href='https://itla.edu.do/images/carreras/2020/pensum-informatica-forense.pdf' target='_blank'>informatica forense</a>
+                            <br> 🪫<a href='https://itla.edu.do/images/carreras/2020/pensum-energias-renovables.pdf' target='_blank'>energias renovables</a>
+                            <br> 📶<a href='https://itla.edu.do/images/pdf/pensum-seguridad-informatica-2020.pdf' target='_blank'>redes de informacion</a>
+                            <br> 🤖<a href='https://itla.edu.do/images/pdf/pensums-2020/pensum-2020-manufactura-automatizada.pdf' target='_blank'>Manufactura automatizada</a>
+                            <br>🤖🏥<a href='https://itla.edu.do/images/pdf/pensums-2020/pensum-2020-manufactura-dispositivos-medicos.pdf' target='_blank'>Manufactura de dispositivos medicos</a>
+                            <br> ✏<a href='https://itla.edu.do/images/pdf/pensums-2020/pensum-2020-diseno-industrial.pdf' target='_blank'>diseño industrial</a>
+                            <br> 📸<a href='https://itla.edu.do/images/pdf/pensums-web-2019-multimedia.pdf' target='_blank'>multimedia</a>
+                            <br> 🔊<a href='https://itla.edu.do/images/pdf/pensum-sonido-2019.pdf' target='_blank'>sonido</a>
+                            <br>📊 <a href='https://itla.edu.do/images/pdf/pensums-WEB-2020-analitica-ciencia-de-los-datos-01.pdf' target='_blank'>analitica y ciencia de datos</a>
+
+";
+			}
+
+			if (senderMensaje.MessageTextSend.Equals("2", StringComparison.InvariantCultureIgnoreCase) ||
+                senderMensaje.MessageTextSend.Equals("duracion de carreras", StringComparison.InvariantCultureIgnoreCase) ||
+                senderMensaje.MessageTextSend.Equals("Duracion de Carreras", StringComparison.InvariantCultureIgnoreCase))
+			{
+				return @"Duracion de Carreras:
+                            <br>💻Software | 2 años 4 meses
+                            <br>🤖Mecatronica | 2 años 4 meses
+                            <br>🔐Seguridad | 2 años 4 meses
+                            <br>👾Simulaciones interactiva y videojuegos | 2 años 4 meses
+  <br>📶Telecomunicaciones | 2 años 4 meses
+  <br>🤖Inteligencia artificial| 2 años 4 meses
+  <br>🕵🏽Informatica forense| 2 años 4 meses
+  <br>🪫energias renobables | 2 años 4 meses
+<br>📶Redes de informacion | 2 años 4 meses
+<br>🤖Manofactura automatizada | 2 años 4 meses
+<br>🤖🏥Manofactura de dispositivos medicos | 2 años 4 meses
+<br>✏Diseño industrial | 2 años 4 meses
+<br>📸Multimedia | 2 años 4 meses
+<br>🔊Sonido | 2 años 4 meses
+<br>📊Analitica y ciencia de datos | 2 años 4 meses";
+			}
+
+            if (senderMensaje.MessageTextSend.Equals("3", StringComparison.InvariantCultureIgnoreCase) ||
+                senderMensaje.MessageTextSend.Equals("Redes Sociales", StringComparison.InvariantCultureIgnoreCase)
+                ||senderMensaje.MessageTextSend.Equals("redes sociales", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return @"Redes Sociales <br>
+                            <a href='https://www.facebook.com/ITLARD/' target='_blank'>Facebook</a> <br>
+                            <a href='https://www.instagram.com/itlard/' target='_blank'>Instagram</a> <br>
+                            <a href='https://twitter.com/ITLARD' target='_blank'>Twitter</a> <br>
+                            <a href='https://www.youtube.com/channel/UCqygdGHHSaVKiKPTQGtsoEA' target='_blank'>Youtube</a>"
+;
+            }
+
+            if (senderMensaje.MessageTextSend.Equals("4", StringComparison.InvariantCultureIgnoreCase) ||
+               senderMensaje.MessageTextSend.Equals("Donde esta el departamento de registro", StringComparison.InvariantCultureIgnoreCase)
+               || senderMensaje.MessageTextSend.Equals("donde esta el departamento de registro", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return @"donde esta el departamento de registro?: <br>
+                           <br>El departamento de registro se encuentra en el edificio 2 al fondo"
+;
+            }
+
+            if (senderMensaje.MessageTextSend.Equals("5", StringComparison.InvariantCultureIgnoreCase) ||
+               senderMensaje.MessageTextSend.Equals("cuantas sucursales tiene el ITLA", StringComparison.InvariantCultureIgnoreCase)
+               || senderMensaje.MessageTextSend.Equals("Cuantas sucursales tiene el ITLA", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return @"Cuantas sucursales tiene el ITLA?: <br>
+                           <br>Santo domingo | 809-738-4852 extensiones: 207 , 208 , 225  
+                           <br>Santiago | 809-971-4852 
+                           <br>Caleta | 809-738-4852  "
+;
+            }
+
+            if (senderMensaje.MessageTextSend.Equals("6", StringComparison.InvariantCultureIgnoreCase) ||
+             senderMensaje.MessageTextSend.Equals("Donde imprimo los tickets", StringComparison.InvariantCultureIgnoreCase)
+             || senderMensaje.MessageTextSend.Equals("donde imprimo los tickets", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return @"donde imprimo los tickets?: <br>
+                           <br>Puede imprimir los tickets del transporte en la biblioteca que se
+ubica en el edificio 3"
+;
+            }
+
+
+            return "Escriba 'hola' y ponga bien escritas una de las opciones dadas";
+
+        }
+
+    }
+}

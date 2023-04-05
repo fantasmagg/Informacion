@@ -7,10 +7,22 @@
 	
 
 <div class="container conte">
+	
 		<div class="row" >
-			<div class="col-md-8 offset-md-2 jefe">
+			
+			<div class="col-md-8 offset-md-2 jefe" style="overflow: hidden;">
 				
-				<div class="chat-container" id="global">
+               
+                
+				<div id="gg">
+					<form asp-controller="Home" asp-action="CerrarPestana" method="post">
+						<button type="submit"  class="btn btn-secondary buttonReset" style="float: left;margin-right: 10px;"><i class="bi bi-bootstrap-reboot"></i></button>
+
+					</form>
+				
+					
+					
+					 				<div class="chat-container" id="global">
 					
 					 @foreach (var senderMensaje in Model)
                     {
@@ -42,6 +54,9 @@
 						<button type="submit" class="btn btn-secondary"><i class="bi bi-send"></i></button>
 					</form>
 				</div>
+				</div>
+				
+				
 			</div>
 			
 		</div>
@@ -59,9 +74,37 @@
         //Fijo el scroll al fondo
         $('#global').scrollTop($('#global').prop('scrollHeight'));
     });
-
+	
 
 	</script>
+	<!--
+	<script type="text/javascript">
+		const urlOrdenar= '@@Url.Action("CerrarPestana")' //eliminar una de las@@ en caso de usar este code
+	$(document).ready(function() {
+    var cerrandoPestana = false;
+    $(window).on('beforeunload', function() {
+        console.log('beforeunload');
+        cerrandoPestana = true;
+    });
+
+    $(window).on('unload', function() {
+        console.log('unload');
+        if (cerrandoPestana) {
+            $.ajax({
+                type: 'GET',
+                url: urlOrdenar,
+                success: function(data) {
+                    console.log('ajax success');
+                }
+            });
+        }
+    });
+});	
+
+
+	</script>-->
+
+
 }
 
 

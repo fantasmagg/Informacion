@@ -57,3 +57,6 @@ C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaE
 C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaEstudiante\ayudaEstudiante\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaEstudiante\ayudaEstudiante\obj\Debug\net6.0\ayudaEstudiante.csproj.CopyComplete
 C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaEstudiante\ayudaEstudiante\bin\Debug\net6.0\Dapper.dll
+C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaEstudiante\ayudaEstudiante\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaEstudiante\ayudaEstudiante\bin\Debug\net6.0\SendGrid.dll
+C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaEstudiante\ayudaEstudiante\bin\Debug\net6.0\StarkbankEcdsa.dll

@@ -148,7 +148,7 @@ namespace ayudaEstudiante.servicios
                           <br>📶Telecomunicaciones | 2 años 4 meses
                           <br>🤖Inteligencia artificial| 2 años 4 meses
                           <br>🕵🏽Informatica forense| 2 años 4 meses
-                          <br>🪫energias renobables | 2 años 4 meses
+                          <br>🍃energias renobables | 2 años 4 meses
                         <br>📶Redes de informacion | 2 años 4 meses
                         <br>🤖Manofactura automatizada | 2 años 4 meses
                         <br>🤖🏥Manofactura de dispositivos medicos | 2 años 4 meses

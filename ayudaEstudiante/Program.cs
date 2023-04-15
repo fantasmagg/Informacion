@@ -10,6 +10,8 @@ builder.Services.AddTransient<IBancoDePreguntasYrespuestas, BancoDePreguntasYres
 
 //email
 builder.Services.AddTransient<IServicioEmail, ServiciosEmailSendGrid>();
+builder.Services.AddTransient<IRegistroConsultas, RegistroConsultas>();
+
 
 var app = builder.Build();
 

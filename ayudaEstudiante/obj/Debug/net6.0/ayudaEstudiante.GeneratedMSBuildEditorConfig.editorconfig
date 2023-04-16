@@ -15,12 +15,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Fanta\OneDrive\Escritorio\ITLA\new cuatrimestr\disenno\proye\pro\ayudaEstudiante\ayudaEstudiante
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Fanta/OneDrive/Escritorio/ITLA/new cuatrimestr/disenno/proye/pro/ayudaEstudiante/ayudaEstudiante/Views/Home/Gracias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcmFjaWFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fanta/OneDrive/Escritorio/ITLA/new cuatrimestr/disenno/proye/pro/ayudaEstudiante/ayudaEstudiante/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Fanta/OneDrive/Escritorio/ITLA/new cuatrimestr/disenno/proye/pro/ayudaEstudiante/ayudaEstudiante/Views/Home/Indexs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fanta/OneDrive/Escritorio/ITLA/new cuatrimestr/disenno/proye/pro/ayudaEstudiante/ayudaEstudiante/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fanta/OneDrive/Escritorio/ITLA/new cuatrimestr/disenno/proye/pro/ayudaEstudiante/ayudaEstudiante/Views/Home/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fanta/OneDrive/Escritorio/ITLA/new cuatrimestr/disenno/proye/pro/ayudaEstudiante/ayudaEstudiante/Views/Home/reporte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZXBvcnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fanta/OneDrive/Escritorio/ITLA/new cuatrimestr/disenno/proye/pro/ayudaEstudiante/ayudaEstudiante/Views/Shared/Error.cshtml]

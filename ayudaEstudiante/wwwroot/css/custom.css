@@ -1,17 +1,28 @@
 ﻿
 
+
 .chat-container {
     margin-top: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    background-color: #fff;
+    
+}
+
+
+.conte{
+    margin-bottom:200px;
 }
 
 .chat-message {
     margin-bottom: 10px;
     display: flex;
+    
 }
+
+
+
+
 
     .chat-message .avatar {
         margin-right: 10px;
@@ -19,31 +30,59 @@
         height: 50px;
         border-radius: 50%;
         background-color: #ccc;
-        background-image: url('https://placehold.it/50x50');
+        
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
-
-    .chat-message .bubble {
-        flex: 1;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #f2f2f2;
+    .chat-message .avatar {
+        background-image: url('https://placehold.it/50x50');
     }
+.buttonReset {
+   
+    line-height: 15px;
+}
+
+.chat-message .bubble {
+    margin-top:10px;
+    padding: 5px;
+    
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    word-wrap: break-word;
+    max-width: 80%; /* Agrega un ancho máximo */
+    min-width: 5%;
+    height:5%;
+    margin-right: 10px;
+}
 
         .chat-message .bubble p {
             margin: 0;
+            padding:0;
             font-size: 14px;
         }
 
+.chat-message.sent .bubble {
+    background-color: #dcf8c6;
+   
+}
+
+.chat-message.sent {
+    display: flex;
+    
+    flex-direction: row-reverse;
+}
+
     .chat-message.sent .bubble {
+        
         background-color: #dcf8c6;
+        justify-content: flex-end;
     }
 
-    .chat-message.received .bubble {
-        background-color: #fff;
-    }
+.chat-message.received .bubble {
+   
+    background-color: #fff;
+}
 
 .message-form {
     margin-top: 20px;
@@ -68,15 +107,64 @@
 
 
 .jefe {
+    
     height: 50%;
     width: 70%;
 }
-
-#global {
-    height: 500px;
-    width: 100%;
-    border: 1px solid #ddd;
-    background: #f1f1f1;
-    overflow-y: scroll;
-    
+#gg {
+    height: 566px;
+    width: 70%;
+    margin: 0 auto;
 }
+#global {
+    min-height: 85%;
+    max-height: 85%;
+    width: 90%;
+    border: 1px solid #ddd;
+    background: #d3e3e2;
+    overflow-y: scroll;
+    margin-left: 0;
+    /* Agregado para centrar el elemento */
+}
+.enviador {
+    width: 90%;
+    margin-left: 50px; /* Agregado para centrar el elemento */
+}
+
+.ss {
+    text-decoration: none;
+}
+.footer {
+    background-color: #232F3E;
+}
+#con{
+    padding-left:100px;
+}
+
+    #con p {
+        color: #80868D;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    #con h5 {
+        padding-top: 20px;
+        color: #FFFFFF;
+    }
+    .conte h4{
+        margin-bottom:0;
+    }
+
+.nav-reporte{
+    padding-left:90%;
+}
+
+.seccion-final {
+    height: 17%;
+    overflow: hidden;
+}
+
+
+
+/*reporte*/
+
+

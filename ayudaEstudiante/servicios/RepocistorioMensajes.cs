@@ -7,8 +7,9 @@ namespace ayudaEstudiante.servicios
 {
     public interface IRepocistorioMensajes
     {
+        Task DeleteMensajes();
         Task guardarMensajes(SenderMensaje senderMensaje);
-        Task<IEnumerable<SenderMensaje>> obtenerMensajes();
+        Task<IEnumerable<SenderMensaje>> obtenerMensajes(int usuario);
     }
     public class RepocistorioMensajes : IRepocistorioMensajes
     {
@@ -26,15 +27,22 @@ namespace ayudaEstudiante.servicios
         public async Task guardarMensajes(SenderMensaje senderMensaje)
         {
             using var connection = new SqlConnection(ConnectionStrings);
-            var id = await connection.QueryFirstOrDefaultAsync<int>
-                ("insert into mensajes (MessageText,MessageTextSend) values(@MessageText,@MessageTextSend);",senderMensaje);
+            await connection.QueryAsync
+                ("insert into mensajes (MessageText,MessageTextSend,Idu) values(@MessageText,@MessageTextSend,@Idu);", senderMensaje);
         }
 
-        public async Task<IEnumerable<SenderMensaje>> obtenerMensajes()
+        public async Task<IEnumerable<SenderMensaje>> obtenerMensajes(int usuario)
         {
             using var connection = new SqlConnection(ConnectionStrings);
 
-            return await connection.QueryAsync<SenderMensaje>("SELECT MessageText , MessageTextSend from mensajes;");
+            return await connection.QueryAsync<SenderMensaje>("SELECT MessageText , MessageTextSend from mensajes where idu =@usuario;" ,new { usuario });
+        }
+
+        public async Task DeleteMensajes()
+        {
+            using var connection = new SqlConnection(ConnectionStrings);
+
+            await connection.ExecuteAsync("DELETE FROM mensajes;");
         }
 
 
